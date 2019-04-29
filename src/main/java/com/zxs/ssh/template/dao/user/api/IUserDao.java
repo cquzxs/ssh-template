@@ -1,21 +1,21 @@
-package com.zxs.ssh.template.service.user.api;
+package com.zxs.ssh.template.dao.user.api;
 
 import com.zxs.ssh.template.model.db.UserModel;
 
-import java.util.Map;
+import java.util.List;
 
 /**
  * Project Name:ssh-template
- * File Name:IUserService
- * Package Name:com.zxs.ssh.template.service.user.api
- * Date:2018/12/11
+ * File Name:IUserDao
+ * Package Name:com.zxs.ssh.template.dao.user.api
+ * Date:2019/4/26
  * Author:zengxueshan
- * Description:用户
- * Copyright (c) 2018, 重庆云凯科技有限公司 All Rights Reserved.
+ * Description:
+ * Copyright (c) 2019, 重庆云凯科技有限公司 All Rights Reserved.
  */
 
 
-public interface IUserService {
+public interface IUserDao {
     /**
      * #1 添加一个model
      *
@@ -72,7 +72,7 @@ public interface IUserService {
      * @return 查询结果
      * @throws Exception 异常
      */
-    Map<String, Object> findPage(int pageIndex, int pageSize) throws Exception;
+    List<UserModel> findPage(int pageIndex, int pageSize) throws Exception;
 
     /**
      * #8 查询结果总数

@@ -51,7 +51,7 @@
         <property name="dataSource" ref="mysql-DS"/>
         <property name="packagesToScan">
             <list>
-                <value>com.zxs.ssh.template.model</value>
+                <value>com.zxs.ssh.template.model.db</value>
             </list>
         </property>
         <property name="configLocation" value="classpath:hibernate.cfg.xml"/>
